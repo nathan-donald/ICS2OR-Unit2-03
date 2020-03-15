@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--This is a comment-->
+<html lang="en=ca">
+  <head>
+  <link rel="stylesheet" href="mystyle.css">
+  <link href="myscript.js">
+  <meta charset="utf-8">
+  <meta name="decription" content="My first webpage, with image">
+  <meta name="keywords" content="MTHS, website">
+  <meta name="author" content="Nathan Donald">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+  </head>
+  <body
+    <h1>Hello, World!</h1>
+    <p>Hello, this is a very discriptive paragraph about absolutely nothing.</p>
+    <br>
+    <p>This is another paragraph that holds my name. I am Nathan Donald.</p>
+    <p id="redtext" onclick="myFunction()">This is another paragraph that you actually did not ask us to do
+    but I still think it is cool. Click me to change the text color to red.</p>
+    <button id="mybtn">Try it</button>
+    <input type="text" id="username">
+    <script>
+     document.getElementById("mybtn").addEventListener("click", sendTextToAlert);
+      function sendTextToAlert() {
+        alert(document.getElementById("username").value)
+      }
+    </script>
+  </body>
+</html>
